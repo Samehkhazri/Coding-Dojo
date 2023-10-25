@@ -1,0 +1,31 @@
+.first{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+
+
+}
+.second{
+    background-color: hotpink;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+.third{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+h1{
+    text-align: center;
+}
+body{
+    margin-left:400px;
+    margin-right: 400px;
+}
