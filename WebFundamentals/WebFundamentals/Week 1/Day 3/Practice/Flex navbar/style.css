@@ -1,0 +1,33 @@
+h1{
+    color: aliceblue;
+    text-align: left;
+    margin-left: 1%;
+}
+.nav{
+    background-color: gray;
+    align-items:center;
+    display: flex;
+    justify-content:space-between;
+    
+}
+.button-link{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color: aliceblue;
+    margin-right: 1%;
+}
+li{
+    margin: 0 30px;
+}
+button{
+    background-color: aqua;
+    box-shadow: 2px 2px 0px 0px black;
+    
+}
+a{
+    color: aliceblue;
+    list-style-type: none;
+    text-decoration: none;
+}
+
