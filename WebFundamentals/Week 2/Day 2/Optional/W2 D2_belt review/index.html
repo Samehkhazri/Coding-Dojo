@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belt Review</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- top nav  -->
+    <nav>
+      <div class="left-nav">
+        <img src="images/cat.png" alt="cat logo" />
+        <h1>CodeIt</h1>
+        <input type="text" placeholder="search" id="searchInput" />
+        <button onclick="alertMe()">Go</button>
+      </div>
+      <div class="right-nav">
+        <button>Get App</button>
+        <button onmouseover="changeButton(this)">Log in</button>
+      </div>
+    </nav>
+    <!-- logo area  -->
+    <header>
+      <div class="header-topic">
+        <img src="images/cat.png" alt="cat logo" />
+        <h2>c/Dojo</h2>
+        <button onclick="remove(this)" id="removeMe">Join</button>
+      </div>
+      <ul>
+        <li>Posts</li>
+        <li>Wiki</li>
+        <li>c/Dojo</li>
+        <li>Discord</li>
+      </ul>
+    </header>
+    <!-- MAIN SECTION  -->
+    <main>
+      <!-- LEFT SIDE  -->
+      <div class="left-column">
+        <!-- The Cards -->
+        <div class="card">
+          <!-- vote button  -->
+          <div class="vote-button">
+            <img
+              src="images/up-arrow.png"
+              alt="up arrow logo"
+              onclick="upVote(1)"
+            />
+            <span id="vote1">29</span>
+            <img src="images/down-arrow.png" alt="down arrow logo" />
+          </div>
+          <!-- The Card Content -->
+          <div class="card-content">
+            <h3>Best of Project week 2023!</h3>
+            <img src="images/image1.webp" alt="image 1" />
+            <!-- bottom content links / share  -->
+            <div class="bottom-content">
+              <img src="images/chat.png" alt="chat logo" />
+              <span>42 comments</span>
+              <img src="images/share.png" alt="share logo" />
+              <span>share</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <!-- vote button  -->
+          <div class="vote-button">
+            <img
+              src="images/up-arrow.png"
+              alt="up arrow logo"
+              onclick="upVote(2)"
+            />
+            <span id="vote2">29</span>
+            <img src="images/down-arrow.png" alt="down arrow logo" />
+          </div>
+          <!-- The Card Content -->
+          <div class="card-content">
+            <h3>Best of Project week 2023!</h3>
+            <img src="images/image1.webp" alt="image 1" />
+            <!-- bottom content links / share  -->
+            <div class="bottom-content">
+              <img src="images/chat.png" alt="chat logo" />
+              <span>42 comments</span>
+              <img src="images/share.png" alt="share logo" />
+              <span>share</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT SIDE  -->
+      <div class="right-column">
+        <div class="box">
+          <h4>About the Dojo</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            accusamus!
+          </p>
+        </div>
+        <div class="box">
+          <h4>Discord</h4>
+          <a href="#">discord.gg/cDojo</a>
+        </div>
+        <div class="box">
+          <h4>c/Dojo rules</h4>
+          <ol>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
