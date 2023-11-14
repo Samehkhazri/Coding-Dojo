@@ -33,3 +33,4 @@ def flexible_counter(lowNum,highNum,mult):
     for i in range(lowNum,highNum):
         if i%mult==0:
             print(i)
+    return None
