@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.carreau{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: cadetblue;
+    border: 2px black solid;
+    
+}
