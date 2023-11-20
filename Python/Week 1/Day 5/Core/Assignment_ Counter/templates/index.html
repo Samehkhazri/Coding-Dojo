@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        input{
+            width: 50px;
+            height: 30px;
+            background-color: aqua;
+        }
+    </style>
+    <title>Counter App</title>
+</head>
+<body>
+
+    <h1>Counter App</h1>
+    <h2>Counter: {{ counter }}</h2>
+    
+    <div class="container">
+    <form action="/" method="get">
+        
+        <input type="submit" value="click">
+    </form>
+
+  
+
+    <form action="/increment_by_two" method="get">
+        <input type="submit" value="+2">
+    </form>
+
+    <form action="/reset" method="get">
+        <input type="submit" value="Reset">
+    </form>
+</div>
+</body>
+</html>
