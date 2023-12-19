@@ -20,7 +20,7 @@ const { name: otherName } = employee;
 console.log(name);
 // error :  name is not defined
 console.log(otherName);
-
+// Elon
 // problem 3
 
 const person = {

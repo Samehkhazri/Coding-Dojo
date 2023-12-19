@@ -3,6 +3,9 @@
 console.log(hello);
 // undefined
 var hello = 'world';
+// console.log(hello)
+// hello
+
 
 // 2
 
@@ -20,14 +23,18 @@ var brendan = 'super cool';
 function print() {
     brendan = 'only okay';
     console.log(brendan);
+    // only okay
+
 
 }
+// print()
 console.log(brendan);
 // super cool
 
 // 4
 
 var food = 'chicken';
+// print()
 console.log(food);
 // chicken
 eat();
@@ -39,9 +46,11 @@ function eat() {
 }
 
 // 5
-
+var food = "chicken";
 mean();
+
 console.log(food);
+// chicken
 
 var mean = function () {
     food = "chicken";
@@ -50,12 +59,19 @@ var mean = function () {
     var food = "fish";
     console.log(food);
 }
+// var food = "pizza";
+// print();
 console.log(food);
+// pizza
 // error
 
 // 6
 
+
+// var genre = "disco";
+// rewind();
 console.log(genre);
+// disco
 // undefined
 var genre = "disco";
 rewind();
