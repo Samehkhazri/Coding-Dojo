@@ -24,12 +24,20 @@ const pokémon = Object.freeze([
     { "id": 148, "name": "Dragonair", "types": ["dragon"] }
 ]);
 const sam = pokémon.filter(pokemon=>pokemon.id%3===0);
+console.log(sam);
 const fire=pokémon.filter(pok=>pok.types.includes("fire"));
-const moreThanType=pokémon.filter(pik=>pik.types.length===1);
+console.log(fire);
+const moreThanType=pokémon.filter(pik=>pik.types.length>1);
+console.log(moreThanType);
 const name=pokémon.map(p=>p.name);
+console.log(name);
 const greaterThan99=pokémon.filter(pak=>pak.id>99).map(pak=>pak.name);
-const typesIsPoison=pokémon.filter(typ=>typ.types.includes("poison")).map(typ=>typ.name);
+console.log(greaterThan99);
+const typesIsPoison=pokémon.filter(typ=>typ.types.length===1 && typ.types[0]=="poison").map(typ=>typ.name);
+console.log(typesIsPoison);
 const secendTypesIsFlying=pokémon.filter(fly=>fly.types[1]==="flying").map(typ=>typ.types[0]);
-const normalType =pokémon.filter(pok=>pok.types.includes("normal")).length
+console.log(secendTypesIsFlying);
+const normalType =pokémon.filter(pok=>pok.types.includes("normal")).length;
+console.log(normalType);
 
 
