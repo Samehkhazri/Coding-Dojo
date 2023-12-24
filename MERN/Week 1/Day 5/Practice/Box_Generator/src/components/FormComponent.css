@@ -1,0 +1,29 @@
+.card{
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+
+}
+input{
+    width: 100px;
+}
+.color{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 1000px;
+    height: 400px;
+    
+}
+/* form{
+    display: flex;
+} */
+.sameh{
+    margin: auto;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+
+}
