@@ -1,19 +1,6 @@
 import React, { useState } from "react";
 
-// const Pokemon = () => {
-//     const [pokemon, setPokemon] = useState([]);
-//     const hundleFetch = () => {
-//         fetch("https://pokeapi.co/api/v2/pokemon/?limit=810")
-//             .then((response) => response.json())
-//             .then((jsonres) => setPokemon(jsonres), console.log(pokemon))
-//             .catch((err) => console.log("you have an error", err));
-//     };
 
-
-
-// export default Pokemon;
-// import { useState } from 'react'
-// import './App.css'
 
 function App() {
     const [pokemon, setPokemon] = useState([])
