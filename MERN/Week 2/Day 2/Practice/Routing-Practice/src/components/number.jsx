@@ -6,7 +6,7 @@ const Number = () => {
     const {num} = useParams()
     return (
         <div>
-            <h1>The Number is: {num}!</h1>
+            {isNaN(num)?<h1>the word is : {num}</h1>:<h1>the number is :{num}</h1>}
         </div>
     )
 
