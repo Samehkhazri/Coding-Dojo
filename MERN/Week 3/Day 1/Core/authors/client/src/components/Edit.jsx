@@ -8,13 +8,13 @@ const Create = () => {
     const [error, setError] = useState(null);
     const nav = useNavigate();
     useEffect(()=>{
-        axios.get(`http://localhost:8000/api/authors/${id}`)
+        axios.get(`http://localhost:8002/api/authors/${id}`)
         .then(res=>setName(res.data.name))
         .catch(err=>console.log(err));
     },[id]);
     const formHandler = e => {
         e.preventDefault();
-        axios.patch(`http://localhost:8000/api/authors/${id}/update`, { name })
+        axios.patch(`http://localhost:8002/api/authors/${id}/update`, { name })
             .then(res => {
                 setName("");
                 nav('/authors')

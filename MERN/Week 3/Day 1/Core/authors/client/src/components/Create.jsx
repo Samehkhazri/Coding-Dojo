@@ -8,7 +8,7 @@ const Create = () => {
     const nav = useNavigate();
     const formHandler = e => {
         e.preventDefault();
-        axios.post('http://localhost:8000/api/authors', { name })
+        axios.post('http://localhost:8002/api/authors', { name })
             .then(res => {
                 setName("");
                 nav('/authors')

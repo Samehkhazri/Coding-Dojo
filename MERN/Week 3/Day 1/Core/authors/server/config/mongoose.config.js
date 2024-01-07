@@ -9,7 +9,8 @@ const pw = process.env.ATLAS_PASSWORD;
 
 
 // ! Don't forget to change the String
-const uri = `mongodb+srv://${username}:${pw}@cluster0.6xurtqr.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${username}:${pw}@cluster0.t8umqmc.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+// mongodb+srv://root:<password>@cluster0.t8umqmc.mongodb.net/
 mongoose
     .connect(uri)
     .then(() =>

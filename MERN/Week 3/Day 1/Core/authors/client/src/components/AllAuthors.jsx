@@ -6,15 +6,15 @@ const AllAuthors = () => {
     const [authors, setAuthors] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/authors')
+        axios.get('http://localhost:8002/api/authors')
             .then(res => setAuthors(res.data)) 
             .catch(err => console.log(err));
     }, []);
 
     const deleteAuthor = (id) => {
-        axios.delete(`http://localhost:8000/api/authors/${id}`)
+        axios.delete(`http://localhost:8002/api/authors/${id}`)
             .then(() => {
-                axios.get('http://localhost:8000/api/authors')
+                axios.get('http://localhost:8002/api/authors')
                     .then(res => setAuthors(res.data))  
                     .catch(err => console.log(err));
             })
