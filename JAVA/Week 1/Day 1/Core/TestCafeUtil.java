@@ -21,18 +21,18 @@ public class TestCafeUtil {
         List<Double> itemPrices = Arrays.asList(2.0, 3.5, 4.0);
         List<Integer> itemQuantities = Arrays.asList(3, 2, 1);
         double totalCost = cafeUtil.getOrderTotal(itemPrices, itemQuantities);
-        System.out.println("Total cost of the order: $" + totalCost);
+        System.out.println("Total cost of the order:" + totalCost +"dt");
 
-        // Test displayMenu method
+        // // Test displayMenu method
         Map<String, Double> menuItems = new HashMap<>();
         menuItems.put("Coffee", 2.0);
         menuItems.put("Tea", 1.5);
         menuItems.put("Muffin", 3.0);
         cafeUtil.displayMenu(menuItems);
 
-        // Test addCustomer method
-        String customerName = "John Doe";
-        cafeUtil.addCustomer(customerName);
-        System.out.println("Customers: " + cafeUtil.getCustomers());
+        // // Test addCustomer method
+        // String customerName = "John Doe";
+        // cafeUtil.addCustomer(customerName);
+        // System.out.println("Customers: " + cafeUtil.getCustomers());
     }
 }
