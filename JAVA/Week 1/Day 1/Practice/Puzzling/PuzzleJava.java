@@ -4,7 +4,8 @@ import java.util.Random;
 public class PuzzleJava {
 
     // getTenRolls
-
+    // Write a method that will generate and return an array with 10 random numbers between 1 and 20 inclusive. 
+    // To get a random integer, you can use the nextInt method of the Random class. Random Class documentation
     public ArrayList<Integer> getTenRolls() {
 
         ArrayList<Integer> random10 = new ArrayList<Integer>();
@@ -19,7 +20,10 @@ public class PuzzleJava {
 
 
     // getRandomLetter
-
+    // Write a method that will:
+    // Create an array or other datatype within the method that contains all 26 letters of the alphabet (must have 26 values). 
+    // Generate a random index between 0-25, and use it to pull a random letter out of the array.
+    // Return the random letter.
 
     // Possible solution with array
     public String getRandomLetterWithArray() {
@@ -43,7 +47,8 @@ public class PuzzleJava {
     }
 
     // generatePassword
-
+    // Write a method that uses the previous method to create a random 
+    // string of eight characters, and return that string.
     public String generatePassword() {
 
         String password = "";
@@ -56,7 +61,7 @@ public class PuzzleJava {
 
 
     // getNewPasswordSet
-
+ 
     public ArrayList<String> getNewPasswordSet(int length) {
 
         ArrayList<String> passwordSet = new ArrayList<String>();
@@ -65,7 +70,25 @@ public class PuzzleJava {
         }
         return passwordSet;
 
+
     }
+                // Ninja Bonus: shuffleArray
+    public <T> void shuffle(ArrayList<T> array) {
+        int n = array.size();
+        Random rand = new Random();
+
+        for (int i = n - 1; i > 0; i--) {
+            int j = rand.nextInt(i + 1);
+            swap(array, i, j);
+        }
+    }
+
+    private <T> void swap(ArrayList<T> array, int i, int j) {
+        T temp = array.get(i);
+        array.set(i, array.get(j));
+        array.set(j, temp);
+    }
+     
 
 
 }
