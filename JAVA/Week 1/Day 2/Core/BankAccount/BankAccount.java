@@ -29,17 +29,16 @@ public class BankAccount {
     }
 
     // METHODS
-    public BankAccount deposit(double amount, String accountType) {
+    public void deposit(double amount, String accountType) {
         if ("checking".equalsIgnoreCase(accountType)) {
             checkingBalance += amount;
         } else if ("savings".equalsIgnoreCase(accountType)) {
             savingsBalance += amount;
         }
         totalMoney += amount;
-        return this;
     }
 
-    public BankAccount withdraw(double amount, String accountType) {
+    public void withdraw(double amount, String accountType) {
         if ("checking".equalsIgnoreCase(accountType) && checkingBalance >= amount) {
             checkingBalance -= amount;
             totalMoney -= amount;
@@ -47,14 +46,12 @@ public class BankAccount {
             savingsBalance -= amount;
             totalMoney -= amount;
         } else {
-            System.out.println("Insufficient funds for withdrawal.");
+            System.out.println("Insufficient funds!");
         }
-        return this;
     }
 
-    public BankAccount getBalance() {
+    public void getBalance() {
         System.out.println("Checking Balance: $" + checkingBalance);
         System.out.println("Savings Balance: $" + savingsBalance);
-        return this;
     }
 }

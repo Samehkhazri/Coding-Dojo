@@ -16,6 +16,14 @@ public class AlfredQuotes {
         Date currentDate = new Date();
         return String.format("It is currently %s.", currentDate.toString());
     }
+    //  public String dateAnnouncement() {
+    //     Date date = new Date();
+    //     String str = date.toString();
+
+    //     String dateAnnounc = "It is currently " + str;
+    //     return dateAnnounc;
+    // }
+    
 
     public String respondBeforeAlexis(String conversation) {
         if (conversation.contains("Alexis")) {

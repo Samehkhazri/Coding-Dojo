@@ -1,43 +1,49 @@
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Arrays;
 
-public class CafeUtil {
-    private List<String> customers;
+public class CafeUtil{
 
-    public CafeUtil() {
-        this.customers = new ArrayList<>();
+    public int getStreakGoal(){
+
+        int sum = 0 ;
+        for(int i=1 ; i<=10 ; i++){
+            sum += i ;
+        }
+        return sum;
     }
 
-    public int getStreakGoal(int streak) {
-        // Assuming a streak of 1 per day, the days needed is the same as the streak goal
-        return streak;
+
+
+    public double getOrderTotal(double[] prices){
+        double sum = 0;
+        for(double a : prices){
+            sum += a ;
+        }
+        return sum ;
     }
 
-    public void printPriceChart(List<Double> prices) {
-        System.out.println("Price Chart:");
-        for (int i = 0; i < prices.size(); i++) {
-            System.out.println("Item " + (i + 1)+ " : "+ prices.get(i)+"dt"  );
+    void displayMenu(ArrayList<String> menuItems){
+        
+        for(int i = 0 ; i < menuItems.size() ; i++){
+            System.out.println(i + " " + menuItems.get(i));
         }
     }
 
-    public double getOrderTotal(List<Double> prices, List<Integer> quantities) {
-        double totalCost = 0.0;
-        for (int i = 0; i < prices.size(); i++) {
-            totalCost += prices.get(i) * quantities.get(i);
-        }
-        return totalCost;
-    }
 
-    public void displayMenu(Map<String, Double> menu) {
-        System.out.println("Menu:");
-        for (Map.Entry<String, Double> entry : menu.entrySet()) {
-            System.out.println(entry.getKey()+" : "+ entry.getValue() + "dt");
-        }
-    }
+    // void = ki tabda el methode ma trajja3 7atta chay ( w dima nesta3mloha kif ne5dmou bel println fel method)
+    public void addCustomer(ArrayList<String> customers){
+        System.out.println("please enter your name : ");
 
-    public void addCustomer(String customerName) {
-        customers.add(customerName);
+        String username = System.console().readLine();
+
+        System.out.println("Hello , " + username);
+
+        int people = customers.size();
+
+        System.out.printf("There are %s people in front of you \n" , people);
+
+        customers.add(username);
+
+        System.out.println(customers);
     }
 }
